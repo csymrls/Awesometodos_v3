@@ -1,6 +1,7 @@
 require("dotenv").config({ debug: true });
 const express = require("express");
 const { connectDB } = require("./models/index.js");
+const createError = require("http-errors");
 const path = require('path');
 
 const app = express();
